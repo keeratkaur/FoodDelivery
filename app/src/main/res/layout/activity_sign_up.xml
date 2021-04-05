@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.SignUp"
+    android:background="@drawable/background2">
+
+    <RelativeLayout
+        android:id="@+id/register_fragment_Progressdialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:elevation="1dp"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_centerVertical="true"
+
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textColor="#000"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Name"
+            android:inputType="text"
+            android:textColorHint="#000" />
+
+        <EditText
+            android:id="@+id/editTextMNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Mobile Number"
+            android:inputType="number"
+            android:textColorHint="#000"
+            android:maxLength="10"/>
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:hint="Delivery Address"
+            android:inputType="text"
+            android:textColorHint="#000" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#000" />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="sans-serif"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColorHint="#000" />
+
+
+
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:background="#e60000"
+            android:textSize="15sp"
+            android:text="Register" />
+
+        <TextView
+            android:id="@+id/textViewLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:text="Already Registered?\nLogin Here"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

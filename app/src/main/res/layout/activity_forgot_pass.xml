@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activity.ForgotPass"
+    android:background="@drawable/background2"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgLogo1"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_registered_mobile_number_and_email_below"
+        android:layout_below="@+id/imgLogo1"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:layout_margin="20dp"/>
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_your_mobile_number"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#000000"
+        android:inputType="number"
+        android:maxLines="1"
+        android:maxLength="10"
+        android:background=" #ffffff"
+        android:layout_below="@+id/imgLogo1"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="@string/enter_your_email_address"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColorHint="#000000"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:maxLines="1"
+        android:background=" #ffffff"
+        android:layout_below="@+id/etMobileNo"
+        />
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="@string/next"
+        android:background="#e60000"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor=" #ffffff"
+        android:layout_below="@+id/etEmail"/>
+</RelativeLayout>

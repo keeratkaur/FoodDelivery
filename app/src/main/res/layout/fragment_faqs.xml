@@ -1,0 +1,173 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fragments.FaqsFragment"
+    android:background="@drawable/app_background">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dip"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtFAQ1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="Q1) How to sign up as a new customer?"
+                    android:textColor="#e65100"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/txtFAQA1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="Customer should register themselves on Fummy if they are regular user of foodchow. They can register themselves on foodchow by few simple clicks. They to go to Login option on any restaurant and click on Sign Up."
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#909090" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dip"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtFAQ2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="2) How to view reviews for particular restaurant?
+
+"
+                    android:textColor="#e65100"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/txtFAQA2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="On Fummy customer can also provide rating to restaurant so that other customer will able to view those review. Go to any restaurant page and scroll down to view reviews/rating of that particular restaurant."
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#909090" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dip"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtFAQ3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="3) How to view restaurant menu?"
+                    android:textColor="#e65100"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/txtFAQA3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="Customer have to go to restaurant page to view menu of restaurant. From the option on restaurant page customer can view menu of that restaurant."
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:background="#909090" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dip"
+                android:background="#00000000"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/txtFAQ4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="4) Can user place order if user is not registered on Fummy?"
+                    android:textColor="#e65100"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:id="@+id/txtFAQA4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:padding="5dp"
+                    android:text="No, for placing orders the customer must register once."
+                    android:textColor="#000000"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:layout_margin="6dp"
+    android:background="#ffffff"
+    app:cardCornerRadius="4dp"
+
+    >
+<LinearLayout
+    android:id="@+id/llcontent"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+    android:weightSum="6">
+
+    <ImageView
+        android:layout_weight="1.5"
+        android:id="@+id/imgRestaurentImage"
+        android:layout_width="0dp"
+        android:layout_height="110dp"
+        android:src="@mipmap/ic_launcher"
+        android:padding="5dp"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:layout_weight="3.3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtRestaurentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name of the Restaurent"
+            android:padding="8dp"
+            android:textSize="18sp"
+            android:textColor="#000000"/>
+
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="300/person"
+            android:layout_marginTop="30dp"
+            android:padding="8dp"
+            android:layout_below="@id/txtRestaurentName"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#357a38"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.2">
+        <TextView
+            android:id="@+id/txtRestaurentRating"
+            android:layout_width="wrap_content"
+            android:padding="4dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffca28"
+            android:text="4.5"
+            android:drawableLeft="@drawable/ic_star"
+
+            android:drawablePadding="4dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtfavourite"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="20dp"
+            android:layout_below="@id/txtRestaurentRating"
+            android:background="@drawable/ic_fav_outline"
+            android:tag="unliked"
+
+
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>
+</androidx.cardview.widget.CardView>
